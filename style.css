@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e9eef2 0%, #d4dde6 100%);
+    color: #131212;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.navbar-custom {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    box-shadow: 0 4px 6px rgba(34, 255, 64, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #c5b5f1;
+    transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #000000;
+}
+
+.jumbotron {
+    background-color: #b9b1db;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.jumbotron:hover {
+    transform: translateY(-5px);
+}
+
+.card-custom {
+    background-color: #ac94da;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.footer-custom {
+    background: #667eea;
+    color: #000000;
+    padding: 1rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    border: none;
+    color: #fffbfb;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(126, 57, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-custom:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(158, 7, 7, 0.2);
+    opacity: 0.9;
+}
+
+.form-select, .form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.form-select:focus, .form-control:focus {
+    border-color: #fafafa;
+    box-shadow: 0 0 5px rgba(193, 203, 243, 0.5);
+}
+
+.form-check-input:checked {
+    background-color: #764ba2;
+    border-color: #5b48a1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .jumbotron, .card-custom {
+        margin-bottom: 20px;
+    }
+}
+.alert-custom-success {
+    background-color: #764ba2;
+    color: rgb(0, 0, 0);
+}
+.alert-custom-error {
+    background-color: #dc3545;
+    color: white;
+}

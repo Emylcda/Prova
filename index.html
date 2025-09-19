@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é Desenvolvimento de Sistemas?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Prova</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">O que é desenvolvimento de sistemas?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pagina2.html">Aprendizado</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="jumbotron p-5 rounded-3">
+            <h1 class="display-4">O que é o Desenvolvimento de Sistemas?</h1>
+            <p class="lead">Entenda a importância da informática e como ela mudou a vida das pessoas.</p>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <h5 class="card-title">Definição e Conceito</h5>
+                        <p class="card-text">Desenvolvimento de sistema é o processo de criação, implementação e manutenção de sistemas de software que atendem às necessidades específicas de usuários ou organizações. Esse processo envolve várias etapas, como análise de requisitos, planejamento, design, aprovação, testes, implantação e suporte.</p>
+                        <p class="card-text">Em outras palavras, é o conjunto de atividades que visa construir um programa ou conjunto de programas que automatizam tarefas, resolvem problemas ou facilitam processos dentro de uma empresa ou para um público específico.</p>
+                        <p class="card-text">Os sistemas de software abrangem desde aplicações simples a complexas, como programas de gestão, bancos digitais e apps. O principal objetivo do seu desenvolvimento é criar soluções funcionais e eficientes que atendam às necessidades dos usuários.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <h5 class="card-title">"Como a Informática Mudou Minha Vida"</h5>
+                        <p class="card-text">A informática mudou significativamente a minha vida, pois me deu acesso ao conhecimento de maneira mais rápida e prática. Hoje consigo estudar, pesquisar e me comunicar com facilidade, além de desenvolver projetos pessoais e explorar minha criatividade. Também facilitou minha rotina, permitindo que eu resolva tarefas do dia a dia pela internet e me conecte com o mundo de forma mais ampla.</p>
+                        <p class="card-text">Além do mais, essa nova realidade abriu portas profissionais que eu nem sabia que existiam. A capacidade de me conectar com o mercado de trabalho global e aprender novas habilidades por meio de cursos online me tornou mais competitivo e preparado para as demandas da sociedade moderna, transformando minha vida em uma jornada de aprendizado e crescimento contínuo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-custom mt-5 p-3 text-center">
+        <p>Emily Belo Horizonte-2025</p>
+        <p>Site feito com ajuda de IA.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const status = urlParams.get('status');
+        const statusMessage = document.getElementById('status-message');
+
+        if (status === 'success') {
+            statusMessage.style.display = 'block';
+            statusMessage.textContent = 'Respostas enviadas com sucesso! Obrigado por participar do quiz.';
+            statusMessage.classList.remove('alert-danger');
+            statusMessage.classList.add('alert-success');
+        } else if (status === 'error') {
+            statusMessage.style.display = 'block';
+            statusMessage.textContent = 'Ocorreu um erro ao enviar as respostas. Por favor, tente novamente mais tarde.';
+            statusMessage.classList.remove('alert-success');
+            statusMessage.classList.add('alert-danger');
+        }
+    });
+    </script>
+</body>
+</html>
